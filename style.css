@@ -1,0 +1,266 @@
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+/* #aboutDiv{
+    text-align: left;
+    width: 500px;
+}
+
+#imageDiv{
+    text-align: right;
+}
+
+@media only screen and (max-width: 767px) {
+    #imageDiv {
+      text-align: center;
+    }
+    #aboutDiv {
+        text-align: center;
+    }
+} */
+
+img:hover,.Skills p:hover, .crtificatesContainer p:hover {
+    transform: scale(1.1);
+}
+
+img{
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.Skills p, .crtificatesContainer p{
+    transition: transform 0.1s ease-in-out;
+}
+.container{
+    padding: 1%;
+    font-style: italic;
+    color: white;
+    margin-top: 50px;
+}
+
+#introDiv{
+
+    background-image: url("intro.jpeg");
+    background-repeat: no-repeat;
+    background-position: bottom; 
+    background-size: cover;
+    padding: 4%;
+    /* margin-top: 10%; */
+    margin-bottom: 3%;
+
+    
+}
+#div2{
+    
+    /* padding: 4%;
+    margin-top: 5%;
+    margin-bottom: 3%; */
+
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+#githubImage{
+    height: 220px;
+    width: 70%;
+    padding: 3%;
+}
+
+.carousel-inner{
+    background-image: url("lightblue1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+    padding: 3%;
+    text-align: center;
+    min-height: 350px;
+
+}
+
+.hackerrankDiv i{
+    height: 13%;
+    width: 13%;
+    padding: 1%;
+    border-radius: 50px;
+}
+
+.crtificatesContainer{
+    background-image: url("lightblue.avif");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+    padding: 4%;
+    text-align: center;
+}
+
+.crtificatesContainer img{
+    height: 30%;
+    width: 85%;
+    padding: 1%;
+}
+
+#logo{
+    height: 40px;
+    width: 40px;
+    padding: 0%;
+}
+
+#logoDiv{
+    background-color: rgba(255, 255, 255, 0.9); 
+    display: inline-flex; 
+    padding-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    /* padding: 2px; */
+    border-radius: 5px;
+    height: 50px;
+    color: black;
+    opacity: 0.8;
+    
+}
+
+.EducationDiv{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 3%;
+
+    height: 220px;
+    width: 100%;
+    border-radius: 13px;
+    border: 1px solid black;
+
+    background-image: url("lightblue.avif");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;  
+
+}
+
+.discrption strong{
+    color: lightblue;
+}
+.discrption h5{
+    color: gold;
+}
+
+
+@media only screen and (max-width: 360px) {
+    .EducationDiv{
+        height: 100%;
+    }  
+} 
+
+.EducationDiv h6, p{
+    text-align: center;
+}
+
+.EducationDiv h5{
+    font-weight: bold;
+    color: gold;
+}
+
+.EducationDiv2{
+    border: 1px solid black; 
+    padding: 3%;
+    /* margin-top: 2%; */
+    border-radius: 13px;
+    color: black;
+    margin: 2%;
+
+    background-image: url("lightblue1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+
+    /* background-color: white;
+    color: rgb(66, 108, 66); */
+    
+}
+.EducationDiv2 h5{
+    color: gold;
+}
+.EducationDiv2 p{
+    text-align: left;
+}
+.EducationDiv2 h6{
+    margin-bottom: 15px;
+}
+
+.EducationDiv::-webkit-scrollbar{
+    display: none;
+}
+p small{
+    color: gold;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #projectDivReverse{
+      display:flex;
+      flex-direction: column-reverse;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 576px) {
+    #navbarTogglerDemo03 .btn{
+        width: 100px;
+    }
+} 
+.animated-bars i {
+    animation: rotate-bars 4s ease-in-out infinite;
+}
+
+@keyframes rotate-bars {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.hello {
+  animation: bounce-in 1s ease-in-out;
+}
+
+@keyframes bounce-in {
+  0% { transform: translateY(-200%); }
+  60% { transform: translateY(0%); }
+  80% { transform: translateY(-5%); }
+  100% { transform: translateY(0%); }
+}
+
+.navbar {
+    animation: text-split 1s ease-in-out;
+}
+
+@keyframes text-split {
+  from { letter-spacing: 10px; opacity: 0; }
+  to { letter-spacing: 0; opacity: 1; }
+}
+
+.h2, .h3 {
+  animation: bounce-letters 1.5s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes bounce-letters {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+
+@keyframes transformAnimation {
+    0% {
+        border-radius: 10%;
+    }
+
+    100% {
+        border-radius: 50%;
+    }
+}

@@ -1,0 +1,64 @@
+.container1{
+
+    /* background-image: url("himalayas.jpg"); */
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+    font-style: italic;
+    color: white;
+    height: 600px;
+    overflow: scroll;
+
+}
+.container1 img{
+
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 2px;
+
+}
+
+.container1::-webkit-scrollbar{
+    display: none;
+}
+
+@media only screen and (max-width: 767px) {
+    .container1 {
+      padding: 5%;
+    }
+    .img{
+        height: 360px;
+    }
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+    border-top: 3px solid black;
+    padding: 2%;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.discrption{
+
+    /* background-color: rgba(20, 3, 3, 0.3); */
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 1%;
+}
+.discrption p{
+    text-align: left;
+}
+.discrption div{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discrption button{
+    border-radius: 8px;
+}
