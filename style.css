@@ -41,7 +41,7 @@ img{
 
 #introDiv{
 
-    background-image: url("intro.jpeg");
+    background-image: url("./images/intro.jpeg");
     background-repeat: no-repeat;
     background-position: bottom; 
     background-size: cover;
@@ -53,10 +53,6 @@ img{
 }
 #div2{
     
-    /* padding: 4%;
-    margin-top: 5%;
-    margin-bottom: 3%; */
-
     border-top: 2px solid white;
     border-bottom: 2px solid white;
 }
@@ -68,7 +64,7 @@ img{
 }
 
 .carousel-inner{
-    background-image: url("lightblue1.jpeg");
+    background-image: url("./images/lightblue1.jpeg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
@@ -87,7 +83,7 @@ img{
 }
 
 .crtificatesContainer{
-    background-image: url("lightblue.avif");
+    background-image: url("./images/lightblue.avif");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
@@ -136,7 +132,7 @@ img{
     border-radius: 13px;
     border: 1px solid black;
 
-    background-image: url("lightblue.avif");
+    background-image: url("./images/lightblue.avif");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;  
@@ -174,7 +170,7 @@ img{
     color: black;
     margin: 2%;
 
-    background-image: url("lightblue1.jpeg");
+    background-image: url("./images/lightblue1.jpeg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
@@ -253,7 +249,6 @@ p small{
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-5px); }
 }
-
 
 @keyframes transformAnimation {
     0% {
