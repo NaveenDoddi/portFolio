@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="project.css">
     <script src="https://kit.fontawesome.com/accd26a21f.js" crossorigin="anonymous"></script><!-- icons -->
-    <link rel="icon" type="image/x-icon" href="dp5.jpg">
+    <link rel="icon" type="image/x-icon" href="images/dp5.jpg">
     <title>Naveen Portfolio</title>
 </head>
 <body>
@@ -250,7 +250,7 @@
         <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-ride="carousel">
             
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="1000" >
+              <div class="carousel-item active" data-bs-interval="3000" >
                 <div id="iss">
                     <div class="text-center"><div id="logoDiv" style="background-color: #3daf67;"><h3 class="h3">HackerRank <img src="./images/images (1).png" alt="" id="logo"></h3></div></div>
                     <div id="i">
@@ -326,18 +326,21 @@
             <p><small> Achievements</small></p>
             <div class="text-center"><div id="logoDiv"><h3 class="h3">Certificates<img src="./images/IMG_20240116_140027.png" alt="" id="logo"></h3></div></div>
 
-            <div class="d-flex justify-content-between">
-                <p class="text-left"><strong>* 1stop </strong> - Web Development</p>
+            <div class="certificatesDiv text-center">
+                <div class="content active" id="content1">
+                  <p ><strong>* 1stop </strong> - Web Development</p>
+              </div>
+                <div class="content" id="content2">
+                  <p><strong>* Accenture </strong> - Certificate of Developer Virtual Experience Program</p>
+              </div>
+                <div class="content" id="content3">
+                  <p><strong>* Nptel</strong> - The Joy of Computing Using Python </p>
+              </div>
+                <div class="content" id="content4">
+                  <p><strong>* Cisco </strong>- Introduction to Networks </p>
+              </div>
             </div>
-            <div class="d-flex justify-content-between">
-                <p  class="text-left"><strong>* Accenture </strong> - Certificate of Developer Virtual Experience Program</p>
-            </div>
-            <div class="d-flex justify-content-between">
-                <p class="text-left"><strong>* Nptel</strong> - The Joy of Computing Using Python </p>
-            </div>
-            <div class="d-flex justify-content-between">
-                <p class="text-left"> <strong>* Cisco </strong>- Introduction to Networks </p>
-            </div>
+
         </div>
 
     </div>
@@ -346,14 +349,16 @@
 
     <div id="Contact" class=" bg-light text-dark text-center mt-5 mb-5" >
         <div style="font-weight: bold;">
-            <p class="text-center"><small> Get in Touch</small></p>
-            <h3 class="h3">Contact Me</h3>
-            <a><div class="btn contactDiv"><i class="fa-regular fa-user"></i> Naveen Doddi</div></a><br>
-            <a href=mailto:"prasadnaveen847@gmail.com"><div class="btn contactDiv"><i class="fa-regular fa-envelope"></i> prasadnaveen847@gmail.com </div></a><br>
-            <a href=callto:"8555913494"><div class="btn contactDiv"><i class="fa-solid fa-phone fa-shake"></i> 8555913494</div></a><br>
-            <a href="https://www.instagram.com/naveeendoddi/" target="_blank"><div class="btn contactDiv"><i class="fa-brands fa-spin fa-instagram"></i> Instagram</div></a><br>
-            <a href="https://twitter.com/naveeendoddi" target="_blank"><div class="btn contactDiv"><i class="fa-brands fa-twitter"></i> Twitter</div></a><br>
-            <a href=""><div class="btn contactDiv"><i class="fa-solid fa-location-dot fa-bounce"></i> Bangalore, India</div></a><br>
+            <div class="contact">
+                <p class="text-center"><small> Get in Touch</small></p>
+                <h3 class="h3">Contact Me</h3>
+                <a><div class="btn contactDiv"><i class="fa-regular fa-user"></i> Naveen Doddi</div></a><br>
+                <a href=mailto:"prasadnaveen847@gmail.com"><div class="btn contactDiv"><i class="fa-regular fa-envelope"></i> prasadnaveen847@gmail.com </div></a><br>
+                <a href=callto:"8555913494"><div class="btn contactDiv"><i class="fa-solid fa-phone fa-shake"></i> 8555913494</div></a><br>
+                <a href="https://www.instagram.com/naveeendoddi/" target="_blank"><div class="btn contactDiv"><i class="fa-brands fa-spin fa-instagram"></i> Instagram</div></a><br>
+                <a href="https://twitter.com/naveeendoddi" target="_blank"><div class="btn contactDiv"><i class="fa-brands fa-twitter"></i> Twitter</div></a><br>
+                <a href=""><div class="btn contactDiv"><i class="fa-solid fa-location-dot fa-bounce"></i> Bangalore, India</div></a><br>
+            </div>
         </div>
 
         <div class="d-flex align-items-center justify-content-center mt-4">
@@ -373,6 +378,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <!-- <script src="script.js"></script> -->
+    <script>
+        // JavaScript for content rotation
+        const contents = document.getElementsByClassName('content');
+        let currentIndex = 0;
+      
+        function rotateContent() {
+          contents[currentIndex].classList.remove('active');
+          currentIndex = (currentIndex + 1) % contents.length;
+          contents[currentIndex].classList.add('active');
+        }
+      
+        // Rotate the content every 3 seconds
+        setInterval(rotateContent, 3000);
+    </script>
 </body>
 </html>
 
