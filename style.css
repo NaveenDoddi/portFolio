@@ -90,7 +90,7 @@ img{
 }
 
 .carousel-inner{
-    background-image: url("./images/lightblue1.jpeg");
+    background-image: url("./images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
@@ -109,7 +109,7 @@ img{
 }
 
 .crtificatesContainer{
-    background-image: url("./images/lightblue.avif");
+    background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
@@ -153,18 +153,19 @@ img{
     gap: 10px;
     padding: 3%;
 
+    color: white;
+
     height: 220px;
     width: 100%;
     border-radius: 13px;
     border: 1px solid black;
 
-    background-image: url("./images/lightblue.avif");
+    background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;  
 
 }
-
 .discrption strong{
     color: lightblue;
 }
@@ -193,10 +194,10 @@ img{
     padding: 3%;
     /* margin-top: 2%; */
     border-radius: 13px;
-    color: black;
+    color: white;
     margin: 2%;
 
-    background-image: url("./images/lightblue1.jpeg");
+    background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
