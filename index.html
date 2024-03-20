@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="project.css">
     <script src="https://kit.fontawesome.com/accd26a21f.js" crossorigin="anonymous"></script><!-- icons -->
-    <link rel="icon" type="image/x-icon" href="images/dp5.jpg">
+    <link rel="icon" type="image/x-icon" href="images/">
     <title>Naveen Portfolio</title>
 </head>
 <body>
@@ -72,12 +72,13 @@
                 <h3 class="h3"><i class="fa-solid fa-user"></i> About Me</h3>
             </div>
             <div class="row">
-                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 d-flex align-items-center justify-content-center mb-2">
-                    <img src="./images/dp5.jpg" style="height: 200px; width: 200px; border-radius: 50%;" alt="">
+                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 mb-2" id="profile_pic">
+                    <img src="./images/dp5.jpg" alt="" style="height: 250px; width: 250px;">
                 </div>
+                
                 <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
-                    <div class="EducationDiv p-2">
-                        <p><small  style="color: white"> "I'm a <strong>Full-stack developer</strong> with expertise in <strong>HTML, CSS, JavaScript, Bootstrap, and React</strong> for creating engaging <strong>user interfaces</strong>. Proficient in <strong>Bootstrap</strong> and intermediate in <strong>React</strong>, I've delivered <strong>projects</strong> showcasing my commitment to <strong>clean, responsive design</strong>. Explore my <strong>GitHub</strong> for the codebase, highlighting my dedication to <strong>quality development</strong>. With a <strong>5-star rating on HackerRank</strong>, I excel in <strong>problem-solving</strong>."</p></small>
+                    <div class="EducationDiv">
+                        <div><small  style="color: white"> "I'm a <strong>Full-stack developer</strong> with expertise in <strong>HTML, CSS, JavaScript, Bootstrap, and React</strong> for creating engaging <strong>user interfaces</strong>. Proficient in <strong>Bootstrap</strong> and intermediate in <strong>React</strong>, I've delivered <strong>projects</strong> showcasing my commitment to <strong>clean, responsive design</strong>. Explore my <strong>GitHub</strong> for the codebase, highlighting my dedication to <strong>quality development</strong>. With a <strong>5-star rating on HackerRank</strong>, I excel in <strong>problem-solving</strong>."</small></div>
                     </div>
                 </div>
             </div>
@@ -246,6 +247,7 @@
         <audio id="audio" autoplay>
             <source src="welcome.wav" type="audio/wav">
         </audio>
+    
 
         <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-ride="carousel">
             
@@ -266,7 +268,7 @@
             
                             </div>
 
-                            <div class="d-flex justify-content-around mb-2  mt-2">
+                            <div class="d-flex justify-content-around mb-2 mt-5 ">
                                 <div class="btn mb-3" style="background-color: #3daf67;">Hackos: 2181</div>
                                 <div class="btn mb-3" style="background-color: #3daf67;">Rank: 80214</div>
                             </div>
@@ -320,7 +322,7 @@
 
     <!-- ************certificates*********** -->
 
-    <div id="Certificates" class="container bg-light text-dark" style="background: none;">
+    <div id="Certificates" class="container bg-light text-light" style="background: none;">
 
         <div class="crtificatesContainer">
             <p><small> Achievements</small></p>
@@ -347,25 +349,40 @@
     
     <!-- **********contact********** -->
 
-    <div id="Contact" class=" bg-light text-dark text-center mt-5 mb-5" >
+    <div id="Contact" class=" bg-light text-dark text-center mt-5 mb-5">
+
+        
+
         <div style="font-weight: bold;">
             <div class="contact">
                 <p class="text-center"><small> Get in Touch</small></p>
                 <h3 class="h3">Contact Me</h3>
-                <a><div class="btn contactDiv"><i class="fa-regular fa-user"></i> Naveen Doddi</div></a><br>
-                <a href=mailto:"prasadnaveen847@gmail.com"><div class="btn contactDiv"><i class="fa-regular fa-envelope"></i> prasadnaveen847@gmail.com </div></a><br>
-                <a href=callto:"8555913494"><div class="btn contactDiv"><i class="fa-solid fa-phone fa-shake"></i> 8555913494</div></a><br>
-                <a href="https://www.instagram.com/naveeendoddi/" target="_blank"><div class="btn contactDiv"><i class="fa-brands fa-spin fa-instagram"></i> Instagram</div></a><br>
-                <a href="https://twitter.com/naveeendoddi" target="_blank"><div class="btn contactDiv"><i class="fa-brands fa-twitter"></i> Twitter</div></a><br>
-                <a href=""><div class="btn contactDiv"><i class="fa-solid fa-location-dot fa-bounce"></i> Bangalore, India</div></a><br>
+
+                <div class="footer_menu">
+                    <ul>
+						<li><a href="#">Intro</a></li>
+						<li><a href="#Projects">Projects </a></li>
+						<li><a href="#About">About</a></li>
+					</ul>
+                    
+                </div>
+
+                <a href=""><div class="btn contactDiv">@Bangalore, India <i class="fa-solid fa-location-dot fa-bounce"></i></div></a><br>
+                
+                <div class="footer_profile mt-2">
+					<ul>
+						<li><a href=mailto:"prasadnaveen847@gmail.com" target="_blank"><i class="fa fa-regular fa-envelope"></i></a></li>
+						<li><a href=callto:"8555913494" target="_blank"><i class="fa fa-phone fa-shake"></i></a></li>
+						<li><a href="https://twitter.com/naveeendoddi"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://www.instagram.com/naveeendoddi/" target="_blank"><i class="fa fa-spin fa-instagram"></i></a></li>
+						<li><a href="https://www.github.com/naveendoddi/" target="_blank"><i class="fa fa-github"></i></a></li>
+					</ul>
+				</div>		
+
             </div>
         </div>
 
-        <div class="d-flex align-items-center justify-content-center mt-4">
-            <div style=" width: 60px;"><a href="#">Intro <strong>|</strong></a></div>
-            <div style=" width: 60px;"><a href="#Projects">Projects </a></div>
-            <div style=" width: 60px;"><a href="#About"><strong>|</strong> About</a></div>
-        </div>
+        
     </div>
 
     </div>
