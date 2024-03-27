@@ -52,7 +52,16 @@ img{
 }
 .discrption p{
     text-align: left;
+
 }
+
+.discrption strong{
+    color:  #3d5875;
+}
+.discrption h5{
+    color: gold;
+}
+
 .discrption div{
     text-align: center;
     display: flex;
@@ -61,4 +70,12 @@ img{
 }
 .discrption button{
     border-radius: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    #projectDivReverse{
+      display:flex;
+      flex-direction: column-reverse;
+    }
+    
 }

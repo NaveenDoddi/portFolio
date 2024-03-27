@@ -1,46 +1,5 @@
 
-.dropdown-toggle::after {
-    display: none;
-}
-
-.certificatesDiv {
-    width: auto;
-    height: 150px;
-    position: relative;
-    overflow: hidden;
-
-    font-weight: 500;
-}
-.certificatesDiv strong{
-    font-weight: 900;
-
-}
-.content {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(100%);
-    /* text-align: center; */
-    transition: transform 1s ease-in-out;
-}
-.content.active {
-    transform: translateY(40%);
-}
-
-.Skills p:hover, .crtificatesContainer p:hover, .contact li:hover {
-    transform: scale(1.1);
-}
-
-.carousel img{
-    height: auto;
-    transition: transform 0.3s ease-in-out;
-}
-.Skills p, .crtificatesContainer p, .contact li {
-    transition: transform 0.1s ease-in-out;
-}
-.container{
+.containers{
     padding: 1%;
     font-style: italic;
     color: white;
@@ -66,7 +25,7 @@
 
 #githubImage{
     height: 250px;
-    /* width: 70%; */
+    width: 75%;
     padding: 1%;
 }
 
@@ -146,6 +105,49 @@
     background-size: cover;  
 
 }
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.certificatesDiv {
+    width: auto;
+    height: 150px;
+    position: relative;
+    overflow: hidden;
+
+    font-weight: 500;
+}
+.certificatesDiv strong{
+    font-weight: 900;
+
+}
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    /* text-align: center; */
+    transition: transform 1s ease-in-out;
+}
+.content.active {
+    transform: translateY(40%);
+}
+
+.Skills p:hover, .crtificatesContainer p:hover, .contact li:hover {
+    transform: scale(1.1);
+}
+
+.carousel img{
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+.Skills p, .crtificatesContainer p, .contact li {
+    transition: transform 0.1s ease-in-out;
+}
 /* .discrption{
     background-image: url("https://t4.ftcdn.net/jpg/05/87/91/05/240_F_587910514_ch4TBvKVdAfTlrPoABS1eu7eTfnPMo0P.jpg");
     background-repeat: no-repeat;
@@ -153,12 +155,6 @@
     background-size: cover;  
     
 } */
-.discrption strong{
-    color: lightblue;
-}
-.discrption h5{
-    color: gold;
-}
 
 
 @media only screen and (max-width: 360px) {
@@ -210,19 +206,17 @@ p small{
     color: gold;
 }
 
-
-@media only screen and (max-width: 768px) {
-    #projectDivReverse{
-      display:flex;
-      flex-direction: column-reverse;
-    }
-    
-}
-
 @media only screen and (max-width: 576px) {
     #navbarTogglerDemo03 .btn{
         width: 100px;
     }
+} 
+@media only screen and (max-width: 768px) {
+    #githubImage{
+        width: 100%;
+        height: 230px;
+    }
+
 } 
 .animated-bars i {
     animation: rotate-bars 4s ease-in-out infinite;
