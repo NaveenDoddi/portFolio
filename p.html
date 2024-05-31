@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuous Underline Animation</title>
+  <style>
+    @keyframes underline {
+      0% {
+        transform: scaleX(0);
+      }
+      50% {
+        transform: scaleX(1);
+      }
+      100% {
+        transform: scaleX(0);
+      }
+    }
+
+    .headline {
+      display: inline-block;
+      position: relative;
+    }
+
+    .underline {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: white;
+      animation: underline 2s infinite;
+      transform-origin: bottom left;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="headline">Continuous Underline Animation<span class="underline"></span></h1>
+</body>
+</html>
