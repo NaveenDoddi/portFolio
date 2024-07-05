@@ -11,6 +11,48 @@
 
 }
 
+.animate {
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.slide-up {
+    transform: translateY(20px);
+}
+
+.slide-up.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-down {
+    transform: translateY(-20px);
+}
+
+.slide-down.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-left{
+    transform: translateX(30px);
+}
+
+.slide-left.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+.slide-right{
+    transform: translateX(-30px);
+}
+
+.slide-right.show{
+    opacity: 1;
+    transform: translateX(0);
+}
+
 .introDiv{
 
     background-image: url("./images/intro.jpeg");
@@ -170,7 +212,7 @@
     transform: translateY(40%);
 }
 
-.Skills p:hover, .crtificatesContainer p:hover, .contact li:hover {
+.Skills p:hover, .contact li:hover, .navbar li:hover {
     transform: scale(1.1);
 }
 
