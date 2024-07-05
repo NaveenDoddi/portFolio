@@ -6,7 +6,12 @@
     margin-top: 50px;
 }
 
-#introDiv{
+.navbar{
+    margin-top: 30px;
+
+}
+
+.introDiv{
 
     background-image: url("./images/intro.jpeg");
     background-repeat: no-repeat;
@@ -16,6 +21,34 @@
     /* margin-top: 10%; */
     margin-bottom: 3%;
 
+}
+
+.introDiv .introDiv2 button{
+    width: auto;
+    height: 45px;
+    /* padding: 20px; */
+    border: 1.5px solid white;
+    border-radius: 25px;
+    font-weight: 600;
+
+}
+
+.introDiv .introDiv3 button{
+    width: auto;
+    height: 35px;
+    /* padding: 20px; */
+    border: 1.5px solid white;
+    border-radius: 20px;
+    font-weight: 600;
+
+}
+
+
+
+.navbar-nav a{
+    color:  black;
+    text-decoration: none;
+    font-size: large;
 }
 #div2{
     
@@ -207,7 +240,7 @@ p small{
 }
 
 @media only screen and (max-width: 576px) {
-    #navbarTogglerDemo03 .btn{
+    #TogglerDemo03 .btn{
         width: 100px;
     }
 } 
@@ -237,9 +270,9 @@ p small{
   100% { transform: translateY(0%); }
 }
 
-.navbar {
+/* .navbar {
     animation: text-split 1s ease-in-out;
-}
+} */
 
 @keyframes text-split {
   from { letter-spacing: 10px; opacity: 0; }

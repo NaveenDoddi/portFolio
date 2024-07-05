@@ -14,47 +14,68 @@
 </head>
 <body>
 
-    
+    <nav class="navbar containers">
+
+        <div class="container-fluid d-flex justify-content-around">
+
+            <h1 class="navbar-brand mb-0 h1" style="font-weight: bold; font-size: x-large;"> Doddi Naveen </h1>
+
+            <button class="btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span role="button" style="color: black; font-size: larger;">☰</span>
+            </button>
+            
+            <div class="collapse navbar-collapse text" style="padding-left: 75%;" id="navbarTogglerDemo03">
+                
+                <ul class="navbar-nav mt-2 mt-lg-0 mx-auto ">
+                   <li class="nav-item">
+                       <a class="nav-link" href="#About">About</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#Projects"> Projects</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#Certificates">Certificates</a>
+                   </li>
+                   <li class="nav-item">
+                       <a class="nav-link" href="#Contact">Contact</a>
+                   </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
     <div>
     <div class="containers">
 
-        <div id="introDiv">
-            <p style="visibility: hidden;">.</p>
-            <div id="div2" class="hello">
-                <div>
-                    <h1 class="text-center" style="color: gold;"> Hello..! <img src="./images/hello.gif" style="height: 50px; width: 50px;"></h1>
-                    <p class="text-center" style="color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;">I'm Naveen, MERN Stack Developer building intuitive web applications and living in Bangalore</p>
-                </div>
-            </div>
-            <div>
-                <nav class="navbar navbar-expand-sm navbar-light">
-                    <button class="navbar-toggler animated-bars" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                        <span role="button"><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
-                    </button>
-                    
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <ul class="navbar-nav mt-2 mt-lg-0 mx-auto">
-                           <li class="nav-item5">
-                               <a href="#About"><div class="btn btn-outline-light">About</div></a>
-                           </li>
-                           <li class="nav-item">
-                               <a href="#Projects"><div class="btn btn-outline-light ">Projects</div></a>
-                           </li>
-                           <li class="nav-item">
-                               <a href="#Github"><div class="btn btn-outline-light ">Github</div></a>
-                           </li>
-                           <li class="nav-item">
-                               <a href="NaveenResume.pdf" download="resume.pdf"><div class="btn btn-outline-light">Resume</div></a>
-                           </li>
-                           <li class="nav-item">
-                               <a href="#Certificates" ><div class="btn btn-outline-light">Certificates</div></a>
-                           </li>
-                           <li class="nav-item">
-                               <a href="#Contact" ><div class="btn btn-outline-light">Contact</div></a>
-                           </li>
-                        </ul>
+        <div class="introDiv">
+            <div id="div2" class="hello text-center">
+
+                <div class="introDiv2">
+                    <h6 class="pt-4" > Hello. I'm</h6>
+                    <h1 class="p-1" style="color: gold;">Doddi Naveen</h1>
+                    <h5 class="p-1">MERN Stack Developer</h5>
+                    <div class="p-1">
+                        <button class="btn btn-outline-light">
+                            Download CV
+                        </button>
+                        &nbsp;
+                        <button class="btn btn-dark">
+                            Contact Info
+                        </button>
                     </div>
-                </nav>
+                </div>
+                
+                <div class="introDiv3 p-1 pb-4">
+                    <a href="https://www.github.com/naveendoddi/" target="_blank"><button class="btn btn-outline-light"><i class="fa fa-github"></i></button></a>
+                    <a href="https://www.instagram.com/naveeendoddi/" target="_blank"><button class="btn btn-light"><i class="fa fa-instagram"></i></button></a>
+                </div>
+
+                <!-- <div class="text-center">
+                    <img src="./images/hello.gif" style="height: 50px; width: 50px;">
+                    
+                    <p class="text-center" style="color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;"> MERN Stack Developer building intuitive web applications and living in Bangalore</p>
+                </div> -->
             </div>
 
         </div>
@@ -143,7 +164,7 @@
 
         <div style="font-weight: bold;" class="text-center bg-light text-dark">
             <p><small> Browse My Recent </small></p>
-            <h2 class="h2">Projects <img src="./images/projectslogo.png" loading="lazy" id="logo" alt=""></h2>    
+            <h2 class="h2"> Projects <img src="./images/projectslogo.png" loading="lazy" id="logo" alt=""></h2>    
         </div>
         
         <div class="container1">
