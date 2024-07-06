@@ -25,19 +25,18 @@
             </button>
             
             <div class="collapse navbar-collapse text" style="padding-left: 76%;" id="navbarTogglerDemo03">
-                
                 <ul class="navbar-nav mt-2 mt-lg-0 mx-auto ">
                    <li class="nav-item">
-                       <a class="nav-link" href="#About">About</a>
+                       <a class="nav-link" href="#About">• About</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="#Projects"> Projects</a>
+                       <a class="nav-link" href="#Projects">• Projects</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="#Certificates">Certificates</a>
+                       <a class="nav-link" href="#Certificates">• Certificates</a>
                    </li>
                    <li class="nav-item">
-                       <a class="nav-link" href="#Contact">Contact</a>
+                       <a class="nav-link" href="#Contact">• Contact</a>
                    </li>
                 </ul>
             </div>
@@ -83,16 +82,29 @@
         
     </div>
 
+    <div class="text-center containers">
+        <h6 style="color:  #0d1e31;">
+            get to know more about me 
+            <i class="fa fa-bounce">
+                <img style="height: 40px; width: 40px;" src="https://static-00.iconduck.com/assets.00/arrow-down-03-icon-395x512-fdpaj73z.png" alt="">
+            </i>
+
+        </h6>
+    </div>
+
     <!-- *********about********** -->
     
-    <div id="About" class="containers animate slide-down" style="background: none;">
+    <div id="About" class="containers" style="background: none;">
 
         <div class="aboutContainer bg-light text-dark text-center">
-            <div style="font-weight: bold;">
-                <p class="text-center"><small> Get To Know More</small></p>
-                <h3 class="h3"><i class="fa-solid fa-user"></i> About Me</h3>
-            </div>
+            
             <div class="row">
+
+                <div class="col-12 animate slide-down" style="font-weight: bold;">
+                    <p class="text-center "><small> Get To Know More</small></p>
+                    <h3 class="h3"><i class="fa-solid fa-user"></i> About Me</h3>
+                </div>
+
                 <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 mb-2 animate zoom-in" id="profile_pic">
                     <img src="./images/dp5.jpg" alt="" style="height: 250px; width: 250px;">
                 </div>
@@ -486,6 +498,7 @@
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('show');
+                    document.getElementById("About").style.visibility=="hidden" ? document.getElementById("About").style.visibility=="visible" : ""
                     observer.unobserve(entry.target); // Stop observing once shown
                 }
             });
@@ -496,6 +509,7 @@
             root: null, // viewport
             rootMargin: '0px', // no margin
             threshold: 0.5 // 50% of the element visible
+
         });
 
         // Get all elements with class 'animate' (and other animation classes)
@@ -503,7 +517,6 @@
         elements.forEach(element => {
             observer.observe(element); // Observe each element
         });
-
 
     </script>
     <script src="https://kit.fontawesome.com/accd26a21f.js" crossorigin="anonymous"></script><!-- icons -->

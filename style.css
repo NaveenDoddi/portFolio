@@ -446,6 +446,7 @@ p small{
     background-color: gold;
     border-radius: 50%;
     border: 2px solid  #3d5875;
+    
 }
 .event:last-child {
     margin-bottom: 0;
