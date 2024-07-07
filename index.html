@@ -307,7 +307,7 @@
 
         <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-ride="carousel">
             
-            <div class="carousel-inner">
+            <div class="carousel-inner bg-light">
               <div class="carousel-item active">
                 <div>
                     <div class="text-center"><div id="logoDiv" style="background-color: #3daf67;"><h3 class="h3">HackerRank <img src="./images/images (1).png" alt="" id="logo"></h3></div></div>
@@ -318,9 +318,9 @@
                         <div>
                             <div class="hackerrankDiv d-flex justify-content-around mt-3">
                             
-                                <i class="fa-brands fa-beat"><img loading="lazy" src="./images/python.jpg" alt=""></i>
-                                <i class="fa-brands fa-beat"><img loading="lazy" src="./images/ps.jpg" alt=""></i>
-                                <i class="fa-brands fa-beat"><img loading="lazy" src="./images/c.jpg" alt=""></i>
+                                <i class="fa-brands"><img loading="lazy" src="./images/python.jpg" alt=""></i>
+                                <i class="fa-brands"><img loading="lazy" src="./images/ps.jpg" alt=""></i>
+                                <i class="fa-brands"><img loading="lazy" src="./images/c.jpg" alt=""></i>
             
                             </div>
 
@@ -394,14 +394,27 @@
 
     <!-- ************certificates*********** -->
 
-    <div id="Certificates" class="containers bg-light text-light animate slide-down" style="background: none;">
+    <div id="Certificates" class="containers text-light animate slide-down" style="background: none;">
 
-        <div class="crtificatesContainer">
+        <div class="crtificatesContainer bg-dark">
             <p><small> Achievements</small></p>
             <div class="text-center"><div id="logoDiv"><h3 class="h3">Certificates<img src="./images/IMG_20240116_140027.png" loading="lazy" alt="" id="logo"></h3></div></div>
 
-            <div class="certificatesDiv text-center">
-                <div class="content active" id="content1">
+            <div class="certificatesDiv">
+              <div class="content" id="content1">
+                  <p ><strong>* 1stop </strong> - Web Development</p>
+              </div>
+                <div class="content" id="content2">
+                  <p><strong>* Accenture </strong> - Certificate of Developer Virtual Experience Program</p>
+              </div>
+                <div class="content" id="content3">
+                  <p><strong>* Nptel</strong> - The Joy of Computing Using Python </p>
+              </div>
+                <div class="content" id="content4">
+                  <p><strong>* Cisco </strong>- Introduction to Networks </p>
+              </div>
+
+              <div class="content" id="content1">
                   <p ><strong>* 1stop </strong> - Web Development</p>
               </div>
                 <div class="content" id="content2">
@@ -464,35 +477,8 @@
     
     <!-- <script src="script.js"></script> -->
     <script>
-
-        // JavaScript for content rotation
-        const contents = document.getElementsByClassName('content');
-        let currentIndex = 0;
-        let rotationInterval;
-
-        function rotateContent() {
-          contents[currentIndex].classList.remove('active');
-          currentIndex = (currentIndex + 1) % contents.length;
-          contents[currentIndex].classList.add('active');
-        }
-
-        function startRotation() {
-          rotationInterval = setInterval(rotateContent, 3000);
-        }
-
-        function stopRotation() {
-          clearInterval(rotationInterval);
-        }
-
-        // Start rotation when the page loads
-        startRotation();
-
-        // Add event listeners to each content item
-        for (const content of contents) {
-          content.addEventListener('mouseenter', stopRotation);
-          content.addEventListener('mouseleave', startRotation);
-        }
-
+        
+        
         // Function to handle intersection observations
         function handleIntersection(entries, observer) {
             entries.forEach(entry => {
