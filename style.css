@@ -6,11 +6,6 @@
     margin-top: 50px;
 }
 
-.navbar{
-    margin-top: 30px;
-
-}
-
 .animate {
     opacity: 0;
     transition: opacity 1.5s ease, transform 1.5s ease;
@@ -61,15 +56,27 @@
     transform: scale(1);
 }
 
-.introDiv{
 
+
+.introDiv111{
+    height: 100%;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+}
+
+.introDiv{
+    
     background-image: url("./images/intro.jpeg");
     background-repeat: no-repeat;
     background-position: bottom; 
     background-size: cover;
     padding: 4%;
+    /* padding-top: 2%; */
+    height: auto;
     /* margin-top: 10%; */
-    margin-bottom: 3%;
+    /* margin-bottom: 3%; */
 
 }
 
