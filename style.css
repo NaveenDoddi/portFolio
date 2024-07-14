@@ -1,9 +1,48 @@
 
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    width: 0%;
+    height: 4px;
+    background: gold;
+    z-index: 10000;
+}
+
 .containers{
     padding: 1%;
     font-style: italic;
     color: white;
     margin-top: 50px;
+}
+.offcanvas-end {
+    opacity: 1;
+    text-align: center;
+    font-size: large;
+    font-weight: 700;
+    padding: 4%;
+    
+}
+.offcanvas-body{
+    
+    /* background-color: rgb(216, 201, 117); */
+    height: auto;
+    background: linear-gradient(
+        to right,
+        /* pink 0%,
+        pink 50%,
+        paleturquoise 50%,
+        paleturquoise 100% */
+        rgb(228, 197, 19) 0%,
+        rgb(236, 224, 157) 50%,
+        #bcd4f0 50%,
+        #093b74 100%
+    );
+}
+
+.offcanvas-end li{
+    opacity: 1;
+    /* padding-left: 40%; */
+    color : white
 }
 
 .animate {

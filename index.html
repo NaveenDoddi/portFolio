@@ -13,6 +13,7 @@
     <title>Naveen Portfolio</title>
 </head>
 <body>
+    <div id="scroll-progress"></div>
     <div class="introDiv111">
         <nav class="navbar mt-2 containers">
 
@@ -20,25 +21,32 @@
 
                 <h1 class="navbar-brand mb-0 h1" style="font-weight: bold; font-size: x-large;"> Doddi Naveen </h1>
 
-                <button class="btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-                    <span role="button" style="color: black; font-size: larger;">☰</span>
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span role="button" style="color:#1360b9;; font-size: larger; font-weight: bold;">☰</span>
                 </button>
-
-                <div class="collapse navbar-collapse text" style="padding-left: 71.8%;" id="navbarTogglerDemo03">
-                    <ul class="navbar-nav mt-2 mt-lg-0 mx-auto ">
-                       <li class="nav-item">
-                           <a class="nav-link" href="#About">• About</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#Projects">• Projects</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#Certificates">• Certificates</a>
-                       </li>
-                       <li class="nav-item">
-                           <a class="nav-link" href="#Contact">• Contact</a>
-                       </li>
-                    </ul>
+            
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <h5></h5>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">👤 About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Projects">🗂️ Projects</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Certificates">📜 Certificates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contact">📞 Contact</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
@@ -487,7 +495,14 @@
     
     <!-- <script src="script.js"></script> -->
     <script>
-        
+        const scrollProgress = document.getElementById('scroll-progress');
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+        window.addEventListener('scroll', () => {
+          const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+          scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
+        });
+
         
         // Function to handle intersection observations
         function handleIntersection(entries, observer) {
