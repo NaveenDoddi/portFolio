@@ -14,37 +14,34 @@
     color: white;
     margin-top: 50px;
 }
-.offcanvas-end {
-    opacity: 1;
-    text-align: center;
+.navbar-collapse a {
+    
+    
     font-size: large;
     font-weight: 700;
-    padding: 4%;
-    
+    color: black;
+    text-decoration: none;
+    font-style: normal;    
 }
-.offcanvas-body{
+.navbar-collapse{
     
     /* background-color: rgb(216, 201, 117); */
+
+    margin-top: 1%;
+    padding: 1%;
     height: auto;
     background: linear-gradient(
-        to right,
+        to left,
         /* pink 0%,
         pink 50%,
         paleturquoise 50%,
         paleturquoise 100% */
         rgb(228, 197, 19) 0%,
-        rgb(236, 224, 157) 50%,
-        #bcd4f0 50%,
+        rgb(236, 224, 157) 35%,
+        #bcd4f0 65%,
         #093b74 100%
     );
 }
-
-.offcanvas-end li{
-    opacity: 1;
-    /* padding-left: 40%; */
-    color : white
-}
-
 .animate {
     opacity: 0;
     transition: opacity 1.5s ease, transform 1.5s ease;
@@ -138,7 +135,7 @@
 
 .introDiv .introDiv2 button{
     width: auto;
-    height: 45px;
+    height: 40px;
     /* padding: 20px; */
     border: 1.5px solid white;
     border-radius: 10px;
