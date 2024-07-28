@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +10,7 @@
     <link rel="stylesheet" href="project.css">
     <link rel="icon" type="image/x-icon" href="images/">
     <title>Naveen Portfolio</title>
+
 </head>
 <body>
     <div id="scroll-progress"></div>
@@ -482,14 +482,6 @@
     
     <!-- <script src="script.js"></script> -->
     <script>
-        const scrollProgress = document.getElementById('scroll-progress');
-        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-
-        window.addEventListener('scroll', () => {
-          const scrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-          scrollProgress.style.width = `${(scrollTop / height) * 100}%`;
-        });
-
         
         // Function to handle intersection observations
         function handleIntersection(entries, observer) {

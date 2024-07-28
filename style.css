@@ -5,7 +5,17 @@
     width: 0%;
     height: 4px;
     background: gold;
-    z-index: 10000;
+    z-index: 1;
+    animation: scroll-progress linear;
+    animation-timeline: scroll();
+}
+
+@keyframes scroll-progress {
+    from {
+        width: 0px;
+    }to{
+        width: 100%;
+    }
 }
 
 .containers{
