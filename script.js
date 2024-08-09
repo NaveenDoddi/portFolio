@@ -9,5 +9,5 @@ const header = {
     typ: 'JWT',
 };
 const b64Header = toBase64 (header);
-const jwtB64Header = replaceSpecialChars(b64Header);
-console.log ("the header is: ",jwtB64Header); 
+// const jwtB64Header = replaceSpecialChars(b64Header);
+console.log ("the header is: ",b64Header); 
