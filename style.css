@@ -121,25 +121,13 @@
     }
 }
 
-.introDiv111{
-    height: 100%;
-    max-height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content:space-evenly;
-}
-
 .introDiv{
     
-    background-image: url("./images/intro.jpeg");
+    background-image: url("./images/pondi_sea.JPG");
     background-repeat: no-repeat;
-    background-position: bottom; 
-    background-size: cover;
+    background-position:center; 
+    background-size:cover;
     padding: 4%;
-    /* padding-top: 2%; */
-    height: auto;
-    /* margin-top: 10%; */
-    /* margin-bottom: 3%; */
 
 }
 
