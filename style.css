@@ -12,7 +12,7 @@
 
 @keyframes scroll-progress {
     from {
-        width: 0px;
+        width: 0%;
     }to{
         width: 100%;
     }
@@ -45,9 +45,9 @@
         paleturquoise 50%,
         paleturquoise 100% */
         rgb(228, 197, 19) 0%,
-        rgb(236, 224, 157) 35%,
+        rgb(243, 231, 164) 35%,
         #bcd4f0 65%,
-        #093b74 100%
+        #144986 100%
     );
 }
 .animate {
@@ -110,6 +110,7 @@
     box-sizing: border-box;
     /* font-family: "Times New Roman", Times, serif; */
     font-family: Georgia, serif;
+    
 }
 
 @keyframes typing{
@@ -543,6 +544,7 @@ p small{
     border: 2px solid  #3d5875;
     
 }
+
 .event:last-child {
     margin-bottom: 0;
 }
