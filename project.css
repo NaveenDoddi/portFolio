@@ -39,9 +39,10 @@
 }
 .container1 img{
     width: 100%;
-    border: 10px solid white;
+    /* border: 10px solid white; */
     border-radius: 10px;
     padding: 2px;
+    box-shadow: 0px 0px 5px 5px rgb(145, 139, 139);
 
 }
 

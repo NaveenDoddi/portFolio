@@ -211,6 +211,8 @@
     
 }
 
+
+
 .EducationDiv{
 
     display: flex;
@@ -443,7 +445,6 @@ p small{
 	transition: 0.3s;
 }
 .footer_menu ul li a:hover{color:#554c86;}
-
 
 .footer_profile ul li{
     display: inline-block;
