@@ -128,11 +128,12 @@ body{
 
 .introDiv{
     
-    background-image: url("./images/pondi_sea.JPG");
+    background: url("./images/pondi_sea.JPG") no-repeat 0 50%;
     background-repeat: no-repeat;
     background-position:center; 
     background-size:cover;
     padding: 4%;
+    
 
 }
 
@@ -142,14 +143,35 @@ body{
 
 /* Default state */
 .introDiv2 > * {
-    display: block;  /* Initially block */
-    transition: all 0.5s ease-in-out; /* Smooth transition */
-    transform: translateX(0); /* Default state for transform */
+    display: block;
+    transition: all 0.5s ease-in-out;
+    transform: translateY(10PX);
 }
+/* 
+.introDiv2:hover {
+    background: url("./images/naveen.jpg");
+    background-repeat: no-repeat;
+    background-position:center; 
+    background-size:cover;
+    padding: 4%;
+} */
 
 .introDiv2:hover > * {
     display: flex;
     justify-content: space-between;
+    transform: translateX(0px);
+
+}
+
+.introDiv2:hover .introLeft{
+    text-align: left;
+    transition: all 0.5s ease-in-out;
+    transform: translateX(-20px);
+}
+
+.introDiv2:hover .introRight{
+    text-align: right;
+    transition: all 0.5s ease-in-out;
     transform: translateX(20px);
 }
 
@@ -411,6 +433,9 @@ p small{
 @media only screen and (max-width: 576px) {
     #TogglerDemo03 .btn{
         width: 100px;
+    }
+    .introDiv2{
+        width: 95%;
     }
 } 
 @media only screen and (max-width: 768px) {
