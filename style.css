@@ -103,15 +103,17 @@ body{
 }
 
 .mern{
-    display: inline-block;
+    /* display: inline-block; */
+    text-align: center;
     overflow: hidden;
     font-weight: 700;
     white-space: nowrap;
     animation: typing 3s steps(25, end) infinite;
     border-right: 2px solid;
     box-sizing: border-box;
-    /* font-family: "Times New Roman", Times, serif; */
+    
     font-family: Georgia, serif;
+    /* font-family: "Times New Roman", Times, serif; */
     
 }
 
@@ -132,6 +134,23 @@ body{
     background-size:cover;
     padding: 4%;
 
+}
+
+.introDiv2{
+    width: 80%;
+}
+
+/* Default state */
+.introDiv2 > * {
+    display: block;  /* Initially block */
+    transition: all 0.5s ease-in-out; /* Smooth transition */
+    transform: translateX(0); /* Default state for transform */
+}
+
+.introDiv2:hover > * {
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(20px);
 }
 
 .introDiv .introDiv2 button{
