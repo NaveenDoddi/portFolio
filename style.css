@@ -1,4 +1,6 @@
-
+body{
+    font-family: 'Roboto', sans-serif;
+}
 #scroll-progress {
     position: fixed;
     top: 0;
@@ -20,9 +22,9 @@
 
 .containers{
     padding: 1%;
-    font-style: italic;
     color: white;
     margin-top: 50px;
+    font-family: 'Roboto', sans-serif;
 }
 .navbar-collapse a {
     font-size: large;
