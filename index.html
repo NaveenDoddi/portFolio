@@ -23,19 +23,21 @@
 
             <div class="container-fluid justify-content-around">
 
-                <h1 class="navbar-brand mb-0 h1" style="font-weight: bold; font-size: x-large; font-family: Times New Roman, Times, serif;"> Doddi Naveen </h1>
+                <!-- <h1 class="navbar-brand mb-0 h1" style="font-weight: bold; font-size: x-large; font-family: Times New Roman, Times, serif;"> Doddi Naveen </h1> -->
 
-                <button class="btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button class="btn" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span role="button" style="color: black; font-size: larger;">☰</span>
-                </button>
+                </button> -->
 
-                <div class="collapse navbar-collapse text" id="navbarTogglerDemo03">
+
+
+                <div class="collapse1 navbar-collapse1 text" id="navbarTogglerDemo03">
                     <div class="mt-2 text-center mt-lg-0 mx-auto d-flex justify-content-around">
-
+<!-- 
                         <span><a href="#About">👤 About</a></span>
                         <span><a href="#Projects">🗂️ Projects</a></span>
                         <span><a href="#Certificates">📜 Certificates</a></span>
-                        <span><a href="#Contact">📞 Contact</a></span>
+                        <span><a href="#Contact">📞 Contact</a></span> -->
 
                     </div>
                 </div>
@@ -43,30 +45,46 @@
             </div>
         </nav>
 
-        <div class="containers mt-2">
+        <div class="containers mt-0">
 
             <div class="introDiv">
+                <div class="collapse1 navbar-collapse1" id="navbarTogglerDemo03">
+                    <div class="mt-2 text-center mt-lg-0 mx-auto d-flex justify-content-around">
+
+                        <span><a href="#About"> About</a></span>
+                        <span><a href="#Projects"> Projects</a></span>
+                        <span><a href="#Certificates"> Certificates</a></span>
+                        <span><a href="#Contact"> Contact</a></span>
+
+                    </div>
+                </div>
+                
                 <div id="div2" class="hello text-center d-flex justify-content-center align-items-center">
                                     
-                    <div class="introDiv2">
-                        <h6 class="pt-3" > Hello, I'm </h6>
-                        <!-- <img src="./images/nameLogo.png" alt="" srcset="" style="height: 150px;"> -->
-                        <h1 class="p-1" style="font-family: Comic Sans; font-size: 3rem; color: gold; text-shadow: 2px 2px 2px white, 0 0 1em #000000, 0 0 0.4em #0d1e31;font-family: Georgia, serif;">Doddi Naveen</h1>
-                        <h5 class="p-1 mern"> MERN Stack Developer </h5>
-                        <p class="" style="opacity: 0.9; font-family: Times New Roman, Times, serif;"> building intuitive web applications and living in Bangalore</p>
+                    <div class="introDiv2 w-xs-100">
+                        <h6 class="pt-3" style="font-size: 12px;"><span class="introLeft">Hello,</span> <span class="introRight">I'm </span></h6>
+                        
+                        <h2 class="p-1" style="font-family: Comic Sans; font-size: 2rem; color: gold; text-shadow: 1.5px 1.5px 1.5px white, 0 0 1em #000000, 0 0 0.4em #0d1e31;font-family: Georgia, serif;">
+                            <span class="introLeft">Doddi</span> <span class="introRight">Naveen</span>
+                        </h2>
+
+                        <h6 class="p-1 mer"><span class="introLeft">MERN Stack</span> <span class="introRight">Developer </span></h6>
+                        <p style="opacity: 0.9; font-size: 12px; font-family: Times New Roman, Times, serif;">
+                            <span class="introLeft">building intuitive web applications,</span> <span class="introRight">living in Bengaluru</span>
+                        </p>
                         <div class="p-1">
-                            <a href="NaveenResume.pdf">
-                                <button class="btn btn-outline-light">Download CV </button>
+                            <a href="NaveenResume.pdf" class="introLeft">
+                                <button class="btn btn-sm btn-outline-light">Download CV </button>
                             </a>
                             &nbsp;
-                            <a href="#Contact">
-                                <button class="btn btn-dark">Contact Info</button>
+                            <a href="#Contact" class="introRight">
+                                <button class="btn btn-sm btn-dark">Contact Info</button>
                             </a>
                         </div>
-
+                    
                         <div class="introDiv3 p-1 pb-4">
-                            <a href="https://www.github.com/naveendoddi/" target="_blank"><button class="btn btn-outline-light"><i class="fa fa-github"></i></button></a>
-                            <a href="https://www.instagram.com/naveeendoddi/" target="_blank"><button class="btn btn-light"><i class="fa fa-instagram"></i></button></a>
+                            <a class="introLeft" href="https://www.github.com/naveendoddi/" target="_blank"><button class="btn btn-sm btn-outline-light"><i class="fa fa-github"></i></button></a>
+                            <a class="introRight" href="https://www.instagram.com/naveeendoddi/" target="_blank"><button class="btn btn-sm btn-light"><i class="fa fa-instagram"></i></button></a>
                         </div>
                     </div>
 
@@ -196,7 +214,7 @@
                     <div class="col-10 col-sm-10 col-md-5 col-lg-5 discrption animate slide-right" data-animation="slide-left">
                         <h5 class="headline">Swiggy</h5>
                         <!-- <p>This is a real time Swiggy project for both restaurants and customers. we can register our account here, add items to cart and place order. Geoloaction is also used in this project</p> -->
-                        <div class="mb-3" align="justify">
+                        <div class="mb-3 aboutProject" align="justify">
                             This project replicates a food ordering system where users can browse menus, add items to their
                             cart, and place orders, while restaurant managers can update the menu with new items. The
                             platform also includes functionality for user registration, user auth, cart management, and
@@ -209,21 +227,22 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 col-md-6 col-lg-6 animate slide-left">
-                        <img src="./images/swiggy.gif" loading="lazy"/>
-                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 animate slide-left position-relative">
+                        <img onclick="preview(this)" src="./images/swiggy.png" loading="lazy"/>
+                        <span class="fw-bold badge badge-light text-dark rounded-pill position-absolute" style="bottom: 10px; right: 0; font-size: 10px;">*preview</span>
+                    </div>                    
 
                     
                 </div>
                 
                 <div class="flex-container row bg-dark">
                     <div class="col-sm-12 col-md-6 col-lg-6 animate slide-right">
-                        <img src="./images/github.gif" loading="lazy"/>
+                        <img onclick="preview(this)" src="./images/github.png" loading="lazy"/>
                     </div>
                     <div class="col-10 col-sm-10 col-md-5 col-lg-5 discrption animate slide-left">
                         <h5 class="headline">Github</h5>
                         <!-- <p> This webite needs original github_id to check your Dashboard. Here you can see your Followers, Following, Reposetries. And you can jump to others Dashboard too. </p> -->
-                        <div class="mb-3" align="justify">
+                        <div class="mb-3 aboutProject" align="justify">
                             This application allows users to view comprehensive details of any GitHub account, including
                             information such as repositories, followers, and following count. Additionally, users can explore
                             other developers' profiles by entering their GitHub ID. The dashboard provides a clean and
@@ -242,7 +261,9 @@
                     <div class="col-10 col-sm-10 col-md-5 col-lg-5 discrption animate slide-right" >
                         <h5 class="headline">Kranthi News</h5>
                         <!-- <p> This is a website for NEWS. getting the information form the database and displaying data. you can search news here.</p> -->
-                        <div class="mb-3" align="justify"> This is a webite developed using React. getting the information from newsapi and arrange the data in cards and carousels. searching option, clear responsiveness and pagenation are devloped.</div>
+                        <div class="mb-3 aboutProject" align="justify">
+                            This is a webite developed using React. getting the information from newsapi and arrange the data in cards and carousels. searching option, clear responsiveness and pagenation are devloped.
+                        </div>
                         <p><strong>Tools used:</strong> React, ui material Bootstrap, Json file </p>
                         <div class="btn-group">
                             <a href="https://qfm8vz.csb.app/" target="_blank"><button class="btn btn-sm btn-outline-light">Live Demo <i class="fa-solid fa-eye"></i></button></a>&nbsp;
@@ -250,17 +271,17 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6 animate slide-left">
-                        <img src="./images/news.gif" loading="lazy"/>
+                        <img onclick="preview(this)" src="./images/news.jpg" loading="lazy"/>
                     </div>
                 </div>
             
                 <div class="flex-container row bg-dark">
                     <div class="col-sm-12 col-md-6 col-lg-6 animate slide-right">
-                        <img src="./images/sudoko.gif" loading="lazy"/>
+                        <img onclick="preview(this)" src="./images/sudoko.jpeg" loading="lazy"/>
                     </div>
                     <div class="col-10 col-sm-10 col-md-5 col-lg-5 discrption animate slide-left">
                         <h5 class="headline">Sudoko</h5>
-                        <div class="mb-3" align="justify"> It is a 9x9 grid Sudoko game. It has three different levels. You can save your game for later. It has sutaible sound effects and timer for this application. This application reveals my problem-solving skills. </div>
+                        <div class="mb-3 aboutProject" align="justify"> It is a 9x9 grid Sudoko game. It has three different levels. You can save your game for later. It has sutaible sound effects and timer for this application. This application reveals my problem-solving skills. </div>
                         <p><strong>Tools used:</strong> Html, Js, Bootstrap, Web Storages </p>
                         <div class="btn-group">
                             <a href="https://naveendoddi.github.io/suduko/" target="_blank"><button class="btn btn-sm btn-outline-light">Live Demo <i class="fa-solid fa-eye"></i></button></a>&nbsp;
@@ -273,7 +294,7 @@
                     
                     <div class="col-10 col-sm-10 col-md-5 col-lg-5 discrption animate slide-right">
                         <h5 class="headline">Typing</h5>
-                        <div class="mb-3" align="justify"> This is a Typing project with 3 different levels. Each level has different timeouts. It calculates your accuracy and words per minute(WPM). Using this project can improve our typing speed. It stores your typing history with time & date. (not for mobile users).</div>
+                        <div class="mb-3 aboutProject" align="justify"> This is a Typing project with 3 different levels. Each level has different timeouts. It calculates your accuracy and words per minute(WPM). Using this project can improve our typing speed. It stores your typing history with time & date. (not for mobile users).</div>
                         <p><strong>Tools used:</strong> Html, Css, Js, Bootstrap, Web Storages</p>
                         <div class="btn-group">
                             <a href="https://naveendoddi.github.io/typing/" target="_blank"><button class="btn btn-sm btn-outline-light">Live Demo <i class="fa-solid fa-eye"></i></button></a>&nbsp;
@@ -281,13 +302,13 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6 col-lg-6 animate slide-left">
-                        <img src="./images/typing.gif" loading="lazy"/>
+                        <img onclick="preview(this)" src="./images/typing.webp" loading="lazy"/>
                     </div>
                 </div>
 
                 <div class="flex-container row bg-dark">
                     <div class="col-sm-12 col-md-6 col-lg-6 animate slide-right">
-                        <img src="./images/pincode.gif" loading="lazy" alt="pincode"/>
+                        <img onclick="preview(this)" src="./images/pincode.jpg" loading="lazy" alt="pincode"/>
                     </div>
                     <div class="col-10 col-sm-10 col-md-5 col-lg-5 discrption animate slide-left">
                         <h5 class="headline">Pincode</h5>
@@ -360,7 +381,7 @@
                 <div>
                     <div class="text-center"><div id="logoDiv" style="background-color: rgb(7, 59, 7); color: white;"><h3 class="h3">Github <img src="./images/images (3).png" alt="" id="logo"></h3></div></div>
                     <div>
-                        <img src="./images/github.png" alt="" id="githubImage" loading="lazy">
+                        <img src="./images/githubDashboad.png" alt="" id="githubImage" loading="lazy">
                     </div>
                     <div class="d-flex justify-content-around mb-3 mt-1">
                         <a href="https://github.com/naveendoddi" target="_blank"><button class="btn btn-outline-light" style="background-color: rgb(7, 59, 7); color: white;">visit profile</button></a>
@@ -496,36 +517,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
-    <!-- <script src="script.js"></script> -->
-    <script>
-        
-        // Function to handle intersection observations
-        function handleIntersection(entries, observer) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                    document.getElementById("About").style.visibility=="hidden" ? document.getElementById("About").style.visibility=="visible" : ""
-                    observer.unobserve(entry.target); // Stop observing once shown
-                }
-            });
-        }
-
-        // Create a new intersection observer
-        const observer = new IntersectionObserver(handleIntersection, {
-            root: null, // viewport
-            rootMargin: '0px', // no margin
-            threshold: 0.5 // 50% of the element visible
-
-        });
-
-        // Get all elements with class 'animate' (and other animation classes)
-        const elements = document.querySelectorAll('.animate, .slide-up, .slide-down, .fade-in, .zoom-in');
-        elements.forEach(element => {
-            observer.observe(element); // Observe each element
-        });
-
-    </script>
-    
+    <script src="script.js"></script>
 
 </body>
 
