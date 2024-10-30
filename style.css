@@ -327,6 +327,9 @@ p small{
 .event:last-child {
     margin-bottom: 0;
 }
+
+
+
 .date {
     font-weight: bold;
     margin-bottom: 5px;
