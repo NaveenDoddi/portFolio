@@ -31,6 +31,14 @@ function preview(image) {
       var imageType = imageNmae.split(".")[1]
 
       
+      if (imageNmae.split(".")[0] === 'Cryptocurrency') {
+            if(imageType === 'gif'){
+                  image.setAttribute('src', './images/Cryptocurrency.webp');
+            }else {
+                  image.setAttribute('src', './images/Cryptocurrency.gif');
+            }
+          
+      } 
       if (imageNmae.split(".")[0] === 'swiggy') {
             if(imageType === 'gif'){
                   image.setAttribute('src', './images/swiggy.png');
