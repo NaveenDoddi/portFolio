@@ -21,9 +21,7 @@ body{
 }
 
 .containers{
-    padding: 1%;
     color: white;
-    margin-top: 50px;
     font-family: 'Roboto', sans-serif;
 }
 .navbar-collapse1 a {
@@ -108,16 +106,24 @@ body{
 
 .introDiv{
     
-    background: url("./images/pondi_sea.JPG");
+    background: url("./images/image.png");
     background-repeat: no-repeat;
     background-position:center; 
     background-size:cover;
     padding: 4%;
-    
+    height: 100vh;
+    margin-bottom: 5vh;
+}
+
+.introDiv #div2{
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: flex-end;
 }
 
 .introDiv2{
-    width: 80%;
+    width: 100%;
 }
 
 .introDiv2 > * {
@@ -162,8 +168,8 @@ body{
 
 .introDiv #div2{
     
-    border-top: 2px solid white;
     border-bottom: 2px solid white;
+    height: 85%;
 }
 
 
