@@ -1,6 +1,10 @@
-body{
+
+html, body {
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
+
+
 #scroll-progress {
     position: fixed;
     top: 0;
@@ -25,7 +29,7 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .navbar-collapse1 a {
-    font-size: 10px;
+    font-size: 1.5vw;
     color: white;
     text-decoration: none;
 }
@@ -86,7 +90,7 @@ body{
     overflow: hidden;
     font-weight: 700;
     white-space: nowrap;
-    animation: typing 3s steps(25, end) infinite;
+    animation: typing 4s steps(25, end) infinite;
     border-right: 2px solid;
     box-sizing: border-box;
     
@@ -242,13 +246,6 @@ p small{
         width: 95%;
     }
 } 
-@media only screen and (max-width: 768px) {
-    #githubImage{
-        width: 100%;
-        height: 230px;
-    }
-
-}
 
 #profile_pic {
     display: flex;
@@ -343,10 +340,10 @@ p small{
     margin-bottom: 15%;
 }
 
-/* certifications div starts here */
+/* github div starts here */
 #githubImage{
-    height: 250px;
-    width: 75%;
+    height: 50%;
+    width: 100%;
     padding: 1%;
 }
 
@@ -363,8 +360,8 @@ p small{
 }
 
 .hackerrankDiv img{
-    height: 13%;
-    width: 13%;
+    height: 15%;
+    width: 15%;
     padding: 1%;
     border-radius: 50px;
 }
@@ -391,6 +388,8 @@ p small{
     
 }
 
+
+/* certifications div starts here */
 .crtificatesContainer{
     /* background-image: url("images/bg.jpg"); */
     background-repeat: no-repeat;
