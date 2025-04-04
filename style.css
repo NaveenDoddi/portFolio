@@ -342,8 +342,8 @@ p small{
 
 /* github div starts here */
 #githubImage{
-    height: 50%;
-    width: 100%;
+    height: 35vw;
+    width: 90%;
     padding: 1%;
 }
 
@@ -358,14 +358,6 @@ p small{
     min-height: 350px;
 
 }
-
-.hackerrankDiv img{
-    height: 15%;
-    width: 15%;
-    padding: 1%;
-    border-radius: 50px;
-}
-
 
 #logo{
     height: 40px;
