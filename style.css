@@ -341,22 +341,32 @@ p small{
 }
 
 /* github div starts here */
-#githubImage{
-    height: 35vw;
-    width: 90%;
-    padding: 1%;
+#githubContributions{
+    max-height: 180px;
+    width: 100%;
+    /* padding: 1%; */
 }
-
-.carousel-inner{
-    /* background-image: url("./images/bg.jpg"); */
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
-
-    padding: 1%;
-    text-align: center;
-    min-height: 350px;
-
+.contributionBox{
+    height: 15px;
+    width: 15px;
+    margin-right: 5px;
+    border-radius: 1px;
+    /* background-color: green; */
+}
+.contributionBox:nth-child(2){
+    background-color:#161B22
+}
+.contributionBox:nth-child(3){
+    background-color: #0E4429
+}
+.contributionBox:nth-child(4){
+    background-color: #006D32
+}
+.contributionBox:nth-child(5){
+    background-color: #26A641
+}
+.contributionBox:nth-child(6){
+    background-color: #39D353
 }
 
 #logo{
