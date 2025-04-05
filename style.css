@@ -1,5 +1,5 @@
-
-html, body {
+html,
+body {
     overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
@@ -19,17 +19,20 @@ html, body {
 @keyframes scroll-progress {
     from {
         width: 0%;
-    }to{
+    }
+
+    to {
         width: 100%;
     }
 }
 
-.containers{
+.containers {
     color: white;
     font-family: 'Roboto', sans-serif;
 }
+
 .navbar-collapse1 a {
-    font-size: 1.5vw;
+    font-size: 0.5rem;
     color: white;
     text-decoration: none;
 }
@@ -57,20 +60,20 @@ html, body {
     transform: translateY(0);
 }
 
-.slide-left{
+.slide-left {
     transform: translateX(30px);
 }
 
-.slide-left.show{
+.slide-left.show {
     opacity: 1;
     transform: translateX(0);
 }
 
-.slide-right{
+.slide-right {
     transform: translateX(-30px);
 }
 
-.slide-right.show{
+.slide-right.show {
     opacity: 1;
     transform: translateX(0);
 }
@@ -84,7 +87,7 @@ html, body {
     transform: scale(1);
 }
 
-.mern{
+.mern {
     /* display: inline-block; */
     text-align: center;
     overflow: hidden;
@@ -93,98 +96,66 @@ html, body {
     animation: typing 4s steps(25, end) infinite;
     border-right: 2px solid;
     box-sizing: border-box;
-    
     font-family: Georgia, serif;
     /* font-family: "Times New Roman", Times, serif; */
-    
+
 }
 
-@keyframes typing{
-    from{
+@keyframes typing {
+    from {
         width: 0;
     }
-    to{
+
+    to {
         width: 20ch;
     }
 }
 
-.introDiv{
-    
+/* .introDiv css starts here */
+
+.introDiv {
+
     background: url("./images/pondi_sea1.jpg");
     background-repeat: no-repeat;
-    background-position:center; 
-    background-size:cover;
-    padding: 4%;
+    background-position: center;
+    background-size: cover;
+
+    padding: 0.5rem;
+    padding-bottom: 0 !important;
     height: 100vh;
-    margin-bottom: 5vh;
+    margin-bottom: 5rem;
 }
 
-.introDiv #div2{
+.introDiv #div2 {
     text-align: center;
     display: flex;
-    justify-content:center;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: end;
+
+    border-bottom: 2px solid white;
+    height: 85%;
 }
 
-.introDiv2{
+.introDiv2 {
     width: 100%;
 }
 
-.introDiv2 > * {
-    display: block;
-    transition: all 0.5s ease-in-out;
-    transform: translateY(10PX);
-}
-/* 
-.introDiv2:hover {
-    background: url("./images/naveen.jpg");
-    background-repeat: no-repeat;
-    background-position:center; 
-    background-size:cover;
-    padding: 4%;
-} */
+.introDiv .introDiv2 button {
 
-.introDiv2:hover > * {
-    display: flex;
-    justify-content: space-between;
-    transform: translateX(0px);
-
-}
-
-.introDiv2:hover .introLeft{
-    text-align: left;
-    transition: all 0.5s ease-in-out;
-    transform: translateX(-20px);
-}
-
-.introDiv2:hover .introRight{
-    text-align: right;
-    transition: all 0.5s ease-in-out;
-    transform: translateX(20px);
-}
-
-.introDiv .introDiv2 button{
-    
     border: 1.5px solid white;
     border-radius: 10px;
 
 }
 
-.introDiv #div2{
-    
-    border-bottom: 2px solid white;
-    height: 85%;
-}
-
 
 /* education div starts here */
-.EducationDiv{
+.EducationDiv {
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    
+
     color: white;
 
     height: 220px;
@@ -194,22 +165,23 @@ html, body {
 
     background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;  
+    background-position: center;
+    background-size: cover;
 
 }
 
-.EducationDiv h6, p{
+.EducationDiv h6,
+p {
     text-align: center;
 }
 
-.EducationDiv h5{
+.EducationDiv h5 {
     font-weight: bold;
     color: gold;
 }
 
-.EducationDiv2{
-    border: 1px solid black; 
+.EducationDiv2 {
+    border: 1px solid black;
     padding: 3%;
     /* margin-top: 2%; */
     border-radius: 13px;
@@ -217,35 +189,39 @@ html, body {
 
     background-image: url("images/bg.jpg");
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     background-size: cover;
 
     /* background-color: white;
     color: rgb(66, 108, 66); */
-    
+
 }
-.EducationDiv2 h5{
+
+.EducationDiv2 h5 {
     color: gold;
 }
-.EducationDiv2 p{
+
+.EducationDiv2 p {
     text-align: left;
 }
-.EducationDiv2 h6{
+
+.EducationDiv2 h6 {
     margin-bottom: 15px;
 }
 
-.EducationDiv::-webkit-scrollbar{
+.EducationDiv::-webkit-scrollbar {
     display: none;
 }
-p small{
+
+p small {
     color: gold;
 }
 
 @media only screen and (max-width: 576px) {
-    .introDiv2{
+    .introDiv2 {
         width: 95%;
     }
-} 
+}
 
 #profile_pic {
     display: flex;
@@ -255,9 +231,9 @@ p small{
     width: 190px;
     height: 230px;
     margin: auto;
-    background-color:  #3d5875;
-    background-image: linear-gradient(19deg,  #3d5875 0%,  #38587a 100%);
-    border : 3px solid #3d5875;
+    background-color: #3d5875;
+    background-image: linear-gradient(19deg, #3d5875 0%, #38587a 100%);
+    border: 3px solid #3d5875;
     border-radius: 30% 30% 30% 30% / 70% 70% 30% 30%;
     box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
     animation: morphing 5s infinite ease-in-out;
@@ -267,18 +243,22 @@ p small{
 #profile_pic:hover {
     animation-play-state: paused;
 }
+
 @keyframes morphing {
     0% {
         border-radius: 30% 30% 30% 30% / 70% 70% 30% 30%;
         box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
     }
-    25% { 
+
+    25% {
         border-radius: 38% 27% 45% 35% / 56% 46% 34% 24%;
     }
+
     50% {
         border-radius: 30% 30% 33% 37% / 45% 27% 43% 45%;
         box-shadow: -10px -5px 50px rgba(0, 0, 0, 0.2);
     }
+
     /* 75% {
         border-radius: 35% 25% 38% 42% / 63% 68% 32% 37%;
     } */
@@ -290,7 +270,7 @@ p small{
 
     display: flex;
     flex-direction: column;
-    justify-content:space-around;
+    justify-content: space-around;
     height: 85%;
 }
 
@@ -303,10 +283,11 @@ p small{
     height: 10px;
     background-color: gold;
     border-radius: 50%;
-    border: 2px solid  #3d5875;
+    border: 2px solid #3d5875;
 }
 
-.event,.event1 {
+.event,
+.event1 {
     border-left: 2px solid white;
     margin-bottom: 20px;
     padding-left: 20px;
@@ -323,8 +304,8 @@ p small{
     height: 10px;
     background-color: gold;
     border-radius: 50%;
-    border: 2px solid  #3d5875;
-    
+    border: 2px solid #3d5875;
+
 }
 
 .event:last-child {
@@ -336,48 +317,60 @@ p small{
     margin-bottom: 5px;
 }
 
-.timeline p{
+.timeline p {
     margin-bottom: 15%;
 }
 
 /* github div starts here */
-#githubContributions{
-    max-height: 180px;
-    width: 100%;
-    /* padding: 1%; */
+
+.githubContributionScroll-wrapper {
+    overflow-x: auto;
 }
-.contributionBox{
+
+#githubContributions {
+    max-width: 100%;
+    min-width: 575px;
+    max-height: 180px;
+}
+
+
+.contributionBox {
     height: 15px;
     width: 15px;
     margin-right: 5px;
     border-radius: 1px;
     /* background-color: green; */
 }
-.contributionBox:nth-child(2){
-    background-color:#161B22
+
+.contributionBox:nth-child(2) {
+    background-color: #161B22
 }
-.contributionBox:nth-child(3){
+
+.contributionBox:nth-child(3) {
     background-color: #0E4429
 }
-.contributionBox:nth-child(4){
+
+.contributionBox:nth-child(4) {
     background-color: #006D32
 }
-.contributionBox:nth-child(5){
+
+.contributionBox:nth-child(5) {
     background-color: #26A641
 }
-.contributionBox:nth-child(6){
+
+.contributionBox:nth-child(6) {
     background-color: #39D353
 }
 
-#logo{
+#logo {
     height: 40px;
     width: 40px;
     padding: 0%;
 }
 
-#logoDiv{
-    background-color: rgba(255, 255, 255, 0.9); 
-    display: inline-flex; 
+#logoDiv {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: inline-flex;
     padding-top: 5px;
     margin-bottom: 5px;
     padding-left: 2px;
@@ -387,31 +380,33 @@ p small{
     height: 50px;
     color: black;
     opacity: 1;
-    
+
 }
 
 
 /* certifications div starts here */
-.crtificatesContainer{
+.crtificatesContainer {
     /* background-image: url("images/bg.jpg"); */
     background-repeat: no-repeat;
-    background-position: center; 
+    background-position: center;
     background-size: cover;
 
     padding: 4%;
     text-align: center;
 }
 
-.crtificatesContainer img{
+.crtificatesContainer img {
     height: 30%;
     width: 85%;
     padding: 1%;
 }
-.certificatesDiv strong{
+
+.certificatesDiv strong {
     font-weight: 900;
     color: gold;
 
 }
+
 .certificatesDiv {
     width: 100%;
     height: 200px;
@@ -442,6 +437,7 @@ p small{
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-400%);
     }
@@ -451,56 +447,71 @@ p small{
     animation-play-state: paused;
 }
 
-.Skills p:hover, .contact li:hover, .navbar li:hover {
+.Skills p:hover,
+.contact li:hover,
+.navbar li:hover {
     transform: scale(1.1);
 }
 
-.carousel img{
+.carousel img {
     height: auto;
     transition: transform 0.3s ease-in-out;
 }
-.Skills p, .crtificatesContainer p, .contact li {
+
+.Skills p,
+.crtificatesContainer p,
+.contact li {
     transition: transform 0.1s ease-in-out;
 }
 
 @media only screen and (max-width: 430px) {
-    .EducationDiv{
+    .EducationDiv {
         height: 100%;
-    }  
+    }
 }
 
 
-.footer_menu ul li{display: inline-flex;}
+.footer_menu ul li {
+    display: inline-flex;
+}
 
 .footer_menu ul li a {
-	color: black;
-	padding: 0 10px;
-	-webkit-transition: 0.3s;
-	transition: 0.3s;
+    color: black;
+    padding: 0 10px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
-.footer_menu ul li a:hover{color:#554c86;}
 
-.footer_profile ul li{
+.footer_menu ul li a:hover {
+    color: #554c86;
+}
+
+.footer_profile ul li {
     display: inline-block;
 }
 
-.footer_profile ul li a img{width:60px;}
-@media only screen and (max-width:480px) { 
-    .footer_profile ul li{margin:2px;}
+.footer_profile ul li a img {
+    width: 60px;
+}
+
+@media only screen and (max-width:480px) {
+    .footer_profile ul li {
+        margin: 2px;
+    }
 }
 
 .footer_profile ul li a {
-	background: #3d5875;
-	width: 40px;
-	height: 40px;
-	display: block;
-	text-align: center;
-	margin-right: 5px;
-	border-radius: 50%;
-	line-height: 40px;
-	box-sizing: border-box;
-	text-decoration: none;
-	-webkit-transition: .3s;
-	transition: .3s;
-	color: #fff;
+    background: #3d5875;
+    width: 40px;
+    height: 40px;
+    display: block;
+    text-align: center;
+    margin-right: 5px;
+    border-radius: 50%;
+    line-height: 40px;
+    box-sizing: border-box;
+    text-decoration: none;
+    -webkit-transition: .3s;
+    transition: .3s;
+    color: #fff;
 }
