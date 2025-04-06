@@ -320,7 +320,25 @@ p small {
 .timeline p {
     margin-bottom: 15%;
 }
+.timeline img{
+    width: 45px; 
+    height: 45px;
+    margin-right: 10px;
+}
+.timeline .school{
+    font-weight: bolder;
+    font-size: large;
+}
 
+.timeline .schoolYears{
+    font-size: small;
+    color: black;
+    opacity: 0.7;
+}
+.timeline .branch{
+    opacity: 0.7;
+    /* color: gray; */
+}
 /* github div starts here */
 
 .githubContributionScroll-wrapper {
@@ -330,6 +348,7 @@ p small {
 #githubContributions {
     max-width: 100%;
     min-width: 575px;
+    /* min-height: 200px; */
     max-height: 180px;
 }
 
