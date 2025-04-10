@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /index.html
+Allow: /images/
+Disallow:
+
+Sitemap: https://naveendoddi.github.io/portFolio/sitemap.xml
