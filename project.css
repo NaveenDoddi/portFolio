@@ -90,3 +90,9 @@
   display: inline-block;
   position: relative;
 }
+.timeline1{
+    display: flex;
+    flex-wrap: wrap;
+    /* grid: ; */
+    gap: 16px;
+}

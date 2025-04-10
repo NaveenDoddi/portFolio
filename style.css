@@ -86,30 +86,41 @@ body {
     opacity: 1;
     transform: scale(1);
 }
-
 .mern {
-    /* display: inline-block; */
     text-align: center;
     overflow: hidden;
     font-weight: 700;
     white-space: nowrap;
-    animation: typing 4s steps(25, end) infinite;
     border-right: 2px solid;
     box-sizing: border-box;
     font-family: Georgia, serif;
-    /* font-family: "Times New Roman", Times, serif; */
+    font-size: 24px;
+}
 
+.typing-text {
+    display: inline-block;
+    animation: typing 4s steps(25, end), blink 0.7s step-end infinite alternate;
+    white-space: nowrap;
 }
 
 @keyframes typing {
     from {
         width: 0;
     }
-
     to {
-        width: 20ch;
+        width: 18ch;
     }
 }
+
+@keyframes blink {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: black;
+    }
+}
+
 
 /* .introDiv css starts here */
 
@@ -268,10 +279,12 @@ p small {
     margin: auto;
     max-width: 800px;
 
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    display: grid;
+    /* flex-direction: column; */
+    gap: 3;
     justify-content: space-around;
-    height: 85%;
+    /* height: 85%; */
 }
 
 .event::after {
