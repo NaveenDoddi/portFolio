@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow:
 
-Sitemap: https://naveendoddi.github.io/portFolio/sitemap.xml
+Sitemap: https://naveendoddi.vercel.app/sitemap.xml
