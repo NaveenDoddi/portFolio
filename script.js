@@ -1,9 +1,8 @@
   const texts = [
     "MERN Stack Developer",
     "Full Stack Developer",
-    "Student",
-    "Developer",
-    "Fresher"
+    " 2024 Graduate ",
+    "Google SEO specialist"
   ];
 
   const typingSpan = document.querySelector('.typing-text');
