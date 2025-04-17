@@ -9,11 +9,12 @@
   let index = 0;
 
   function typeNextText() {
-    
-    void typingSpan.offsetWidth; // Trigger reflow
+    typingSpan.style.animation = 'none';
+    void typingSpan.offsetWidth;
+    typingSpan.style.animation = 'typing 4s steps(25, end), blink 0.7s step-end infinite alternate';
     typingSpan.textContent = texts[index];
     index = (index + 1) % texts.length;
-    setTimeout(typeNextText, 4000); // Match with typing animation duration
+    setTimeout(typeNextText, 4000);
   }
 
 typeNextText();
