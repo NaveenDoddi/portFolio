@@ -2,7 +2,7 @@
     "MERN Stack Developer",
     "Full Stack Developer",
     " 2024 Graduate ",
-    "Google SEO specialist"
+    "Google SEO Specialist"
   ];
 
   const typingSpan = document.querySelector('.typing-text');
@@ -14,7 +14,7 @@
     typingSpan.style.animation = 'typing 4s steps(25, end), blink 0.7s step-end infinite alternate';
     typingSpan.textContent = texts[index];
     index = (index + 1) % texts.length;
-    setTimeout(typeNextText, 4000);
+    setTimeout(typeNextText, 4500);
   }
 
 typeNextText();
@@ -25,7 +25,7 @@ function handleIntersection(entries, observer) {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             entry.target.classList.add('show');
-            document.getElementById("About").style.visibility=="hidden" ? document.getElementById("About").style.visibility=="visible" : ""
+            document.getElementById("About").style.visibility == "hidden" ? document.getElementById("About").style.visibility == "visible" : ""
             observer.unobserve(entry.target); // Stop observing once shown
         }
     });
