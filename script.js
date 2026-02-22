@@ -1,8 +1,8 @@
   const texts = [
-    "MERN Stack Developer",
-    "Full Stack Developer",
-    " 2024 Graduate ",
-    "Google SEO Specialist"
+            "Python Automation Engineer",
+            "CI/CD & Docker Enthusiast",
+            "Full Stack Developer",
+            "API & Framework Tester"
   ];
 
   const typingSpan = document.querySelector('.typing-text');

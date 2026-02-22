@@ -32,7 +32,7 @@ body {
 }
 
 .navbar-collapse1 a {
-    font-size: 0.5rem;
+    font-size: clamp(0.85rem, 1.8vw, 1.05rem);
     color: white;
     text-decoration: none;
 }
@@ -351,6 +351,46 @@ p small {
 .timeline .branch{
     opacity: 0.7;
     /* color: gray; */
+}
+
+.experienceSection {
+    margin: 1.5rem auto 1rem;
+    padding: 0 12px;
+}
+
+.experienceCard {
+    margin: 0 auto;
+    max-width: 1100px;
+    border: 1px solid black;
+    border-radius: 13px;
+    padding: 1.25rem;
+    color: white;
+    background-image: url("images/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.experienceCard .timeline {
+    max-width: 100%;
+}
+
+.experienceCard .event {
+    border-left: 2px solid rgba(255, 255, 255, 0.9);
+    margin-bottom: 22px;
+    padding-left: 22px;
+}
+
+.experienceCard .event div:last-child {
+    margin-top: 8px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+@media only screen and (min-width: 768px) {
+    .experienceCard {
+        padding: 1.75rem;
+    }
 }
 /* github div starts here */
 
