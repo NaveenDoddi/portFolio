@@ -19,6 +19,31 @@
 
 typeNextText();
 
+const interestForm = document.getElementById('interestForm');
+const formStatus = document.getElementById('form-status');
+
+if (interestForm) {
+    interestForm.addEventListener('submit', function (event) {
+        if (window.location.protocol === 'file:') {
+            event.preventDefault();
+
+            const name = document.getElementById('contactName').value.trim();
+            const email = document.getElementById('contactEmail').value.trim();
+            const interest = document.getElementById('contactInterest').value;
+            const message = document.getElementById('contactMessage').value.trim();
+            const subject = `Portfolio Interest - ${interest}`;
+            const body = `Name: ${name}\nEmail: ${email}\nInterest: ${interest}\n\nMessage:\n${message}`;
+
+            if (formStatus) {
+                formStatus.textContent = 'Opening your email app...';
+            }
+
+            window.location.href = `mailto:prasadnaveen847@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        } else if (formStatus) {
+            formStatus.textContent = 'Sending your message...';
+        }
+    });
+}
 
 // Function to handle intersection observations
 function handleIntersection(entries, observer) {

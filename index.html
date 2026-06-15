@@ -96,12 +96,12 @@
                             scalable backend systems, and modern software products in Bengaluru.
                         </p>
 
-                        <p class="d-none d-md-block"
+                        <!-- <p class="d-none d-md-block"
                             style="opacity: 0.9; font-size: 0.95rem; font-weight: 500; font-family: serif;">
                             Skilled in Python, Docker, CI/CD, REST APIs, Linux, and automation framework development.
                             Currently exploring Generative AI, Machine Learning, and data-driven applications to create
                             smarter software solutions.
-                        </p>
+                        </p> -->
                         <div class="hero-highlights mt-3">
                             <div class="hero-pill">Automation & QA</div>
                             <div class="hero-pill">CI/CD • Docker • DIND</div>
@@ -137,7 +137,6 @@
 
                         <span><a href="#About"> About</a></span>
                         <span><a href="#Experience"> Experience</a></span>
-                        <span><a href="#Focus"> Focus</a></span>
                         <span><a href="#Projects"> Projects</a></span>
                         <span><a href="#Certificates"> Certificates</a></span>
                         <span><a href="#Contact"> Contact</a></span>
@@ -176,8 +175,8 @@
 
         <!-- *********experience********** -->
 
-        <div id="Experience" class="containers experienceSection">
-            <p class="section-label text-center"><small>My Professional Journey</small></p>
+        <div id="Experience" class="containers experienceSection text-center">
+            <p class="section-label"><small>My Professional Journey</small></p>
             <h3 class="h3 text-center text-dark"><i class="fa-solid fa-briefcase"></i> Experience </h3>
 
             <div class="experienceCard animate slide-down">
@@ -673,34 +672,37 @@
 
     <!-- **********contact********** -->
 
-    <div id="Contact" class=" bg-light text-dark text-center mt-5 mb-5 animate slide-down">
-
-        <div style="font-weight: bold;">
-            <div class="contact">
+    <div id="Contact" class="contact-section animate slide-down">
+        <div class="contact-shell">
+            <div class="contact-copy">
                 <p class="section-label"><small>Get in Touch</small></p>
-                <h3 class="h3">Contact Me</h3>
+                <h3 class="h3">Let’s build something great</h3>
+                <p class="contact-description">
+                    Have a project in mind, a collaboration idea, or an opportunity to discuss? Share your details and
+                    I’ll get back to you soon.
+                </p>
+
+                <div class="contact-highlights">
+                    <div class="contact-pill"><i class="fa-solid fa-envelope"></i> prasadnaveen847@gmail.com</div>
+                    <div class="contact-pill"><i class="fa-solid fa-phone"></i> +91 85559 13494</div>
+                    <div class="contact-pill"><i class="fa-solid fa-location-dot"></i> Bengaluru, India</div>
+                </div>
 
                 <div class="footer_menu text-center">
                     <ul>
-                        <li><a href="#">Intro</a></li>
-                        <li><a href="#Projects">Projects </a></li>
+                        <li><a href="#top">Intro</a></li>
+                        <li><a href="#Projects">Projects</a></li>
                         <li><a href="#About">About</a></li>
                     </ul>
-
                 </div>
-
-                <a href="">
-                    <div class="btn contactDiv">8555913494 <i class="fa-solid fa-location-dot"></i> Bengaluru, India
-                    </div>
-                </a><br>
 
                 <div class="footer_profile m-2">
                     <ul>
-                        <li><a href=mailto:"prasadnaveen847@gmail.com" target="_blank"><i
+                        <li><a href="mailto:prasadnaveen847@gmail.com" target="_blank"><i
                                     class="fa fa-regular fa-envelope"></i></a></li>
-                        <li><a href=callto:"8555913494" target="_blank"><i class="fa fa-phone fa-shake"></i></a></li>
-                        <li><a href="https://twitter.com/naveeendoddi"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="https://www.linkedin.com/in/naveen-doddi-68726724b/"><i
+                        <li><a href="tel:+918555913494" target="_blank"><i class="fa fa-phone fa-shake"></i></a></li>
+                        <li><a href="https://twitter.com/naveeendoddi" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/naveen-doddi-68726724b/" target="_blank"><i
                                     class="fa fa-linkedin"></i></a></li>
                         <li><a href="https://www.instagram.com/naveeendoddi/" target="_blank"><i
                                     class="fa fa-spin fa-instagram"></i></a></li>
@@ -708,11 +710,42 @@
                                     class="fa fa-github"></i></a></li>
                     </ul>
                 </div>
-
             </div>
+
+            <form class="contact-form" id="interestForm" action="https://formsubmit.co/prasadnaveen847@gmail.com" method="POST">
+                <input type="hidden" name="_subject" value="Portfolio Interest from Website">
+                <input type="hidden" name="_captcha" value="false">
+
+                <div class="field-group">
+                    <label for="contactName">Your Name</label>
+                    <input type="text" id="contactName" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="contactEmail">Email Address</label>
+                    <input type="email" id="contactEmail" name="email" placeholder="your@email.com" required>
+                </div>
+
+                <div class="field-group">
+                    <label for="contactInterest">Interest</label>
+                    <select id="contactInterest" name="interest">
+                        <option value="Project Inquiry">Project Inquiry</option>
+                        <option value="Job Opportunity">Job Opportunity</option>
+                        <option value="Collaboration">Collaboration</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="field-group">
+                    <label for="contactMessage">Your Message</label>
+                    <textarea id="contactMessage" name="message" rows="5"
+                        placeholder="Tell me about your idea, project, or goal..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-dark w-100">Send Interest</button>
+                <p id="form-status" class="form-note" aria-live="polite">Your message will be sent to your inbox through the contact form service.</p>
+            </form>
         </div>
-
-
     </div>
 
     </div>
