@@ -730,6 +730,36 @@ p small {
     line-height: 1.45;
 }
 
+.project-tools {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem 0 0;
+    padding: 0.9rem 1rem;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.92);
+    color: #0d1e31;
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    border: 1px solid rgba(13, 30, 49, 0.08);
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.project-tools .tool-badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    background: #dbeafe;
+    color: #1e5fa8;
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.project-tools strong {
+    color: #0d1e31;
+}
+
 @keyframes certFadeUp {
     0% {
         opacity: 0;
