@@ -577,6 +577,18 @@ p small {
         padding: 1.75rem;
     }
 }
+
+.experience-logo {
+    margin: 0.75rem 0 0;
+}
+
+.experience-logo img {
+    max-width: 90px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 /* github div starts here */
 
 .githubContributionScroll-wrapper {
@@ -730,7 +742,7 @@ p small {
     line-height: 1.45;
 }
 
-.project-tools {
+/* .project-tools {
     display: inline-flex;
     flex-wrap: wrap;
     align-items: center;
@@ -742,9 +754,9 @@ p small {
     color: #0d1e31;
     box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
     border: 1px solid rgba(13, 30, 49, 0.08);
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     line-height: 1.4;
-}
+} */
 
 .project-tools .tool-badge {
     display: inline-block;
@@ -753,7 +765,7 @@ p small {
     background: #dbeafe;
     color: #1e5fa8;
     font-weight: 700;
-    font-size: 0.8rem;
+    font-size: 0.78rem;
 }
 
 .project-tools strong {
