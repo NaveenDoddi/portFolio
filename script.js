@@ -18,7 +18,7 @@
   }
 
 typeNextText();
-
+  
 const interestForm = document.getElementById('interestForm');
 const formStatus = document.getElementById('form-status');
 
